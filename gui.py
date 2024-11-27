@@ -4,7 +4,7 @@ from cocktail_Manager import CocktailManager  # Replace with your class import
 from cocktail import Cocktail  # Replace with your class import
 
 # TODO 8 i want black background but need to find where i defined the text as black
-# THEME_COLOR = "#F7E1D7"  # Light cream
+
 THEME_COLOR = "#F7E1D7"  # Light cream
 BUTTON_COLOR_PRIMARY = "#D2691E"  # Chocolate brown
 BUTTON_COLOR_SECONDARY = "#C58F6F"  # Soft brown
@@ -12,7 +12,7 @@ TEXT_COLOR = "#2C2C2C"  # Dark gray
 FONT_HEADER = ("Georgia", 20, "bold")
 FONT_BODY = ("Roboto", 14,)
 FONT_BUTTON = ("Roboto", 16, "bold")
-
+obsidian_black = "#0F0F0F"
 """ ALL the functions here
 __init__: Sets up the main GUI and its components.
 create_scrollable_frame: Handles UI-related tasks for creating scrollable content.
@@ -38,23 +38,18 @@ class CocktailAppGUI:
         # Window setup
         self.window = Tk()
         self.window.title("Bartender's Cocktail Book")
-        self.window.config(background=THEME_COLOR, padx=20, pady=20)
+        self.window.config(background="#0F0F0F", padx=0, pady=0)
 
         # Add an "X" button to close the app
         self.window.protocol("WM_DELETE_WINDOW", self.close_app)
 
         # Canvas for displaying cocktails
-        self.canvas = Canvas(bg="yellow", width=400, height=300, highlightthickness=0)
-        self.canvas_text = self.canvas.create_text(
-            200, 150, width=380, text="Welcome to your Cocktail Book!", font=FONT_HEADER
-        )
-        self.canvas.grid(row=0, column=0, columnspan=2, pady=20)
-
-        # Add a logo to the main screen
-
-        self.logo = PhotoImage(file="images/bg_img.png")
-        self.logo_label = Label(image=self.logo, bg=THEME_COLOR)
-        self.logo_label.grid(row=0, column=0, columnspan=3, pady=20)
+        self.canvas = Canvas(bg="black", width=480, height=480, highlightthickness=0)
+        self.canvas_text = self.canvas.create_text(200, 150, width=380)
+        self.background_image = PhotoImage(file="images/bg_img.png")
+        # Add the background image to the Canvas
+        self.canvas.create_image(0, 0, image=self.background_image, anchor="nw")
+        self.canvas.grid(row=0, column=0, columnspan=2, pady=0)
 
         # Icon for add_cocktail button
         add_cocktail_icon_path = "images/add clear 100.png"  # Make sure this path is correct
@@ -71,33 +66,33 @@ class CocktailAppGUI:
 
         # Buttons
         self.add_button = Button(
-            text="", command=self.add_cocktail, highlightthickness=0, bg="#000000", fg="black", borderwidth=0,
-            font=FONT_BUTTON,
+            command=self.add_cocktail, highlightthickness=0, bg=obsidian_black, borderwidth=0,
             image=add_cocktail_icon,
             compound="top",
+            activebackground=obsidian_black
         )
         self.add_button.grid(row=1, column=0, padx=10, pady=10)
 
         self.view_button = Button(
-            text="", command=self.view_cocktails, highlightthickness=0, bg="#000000", fg="black", borderwidth=0,
-            font=FONT_BUTTON,
+            command=self.view_cocktails, highlightthickness=0, bg=obsidian_black, borderwidth=0,
             image=view_cocktail_icon,
+            activebackground=obsidian_black,
         )
         self.view_button.grid(row=1, column=1, padx=10, pady=10)
 
         self.edit_button = Button(
-            text="", command=self.edit_cocktail, highlightthickness=0, bg="#000000", fg="black", borderwidth=0,
-            font=FONT_BUTTON,
+            command=self.edit_cocktail, highlightthickness=0, bg=obsidian_black, borderwidth=0,
             image=edit_cocktail_icon,
             compound="top",
+            activebackground=obsidian_black,
         )
         self.edit_button.grid(row=2, column=0, pady=20)
 
         self.search_button = Button(
-            text="", command=self.search_cocktail, highlightthickness=0, bg="#000000", fg="black", borderwidth=0,
-            font=FONT_BUTTON,
+            command=self.search_cocktail, highlightthickness=0, bg=obsidian_black, borderwidth=0,
             image=search_cocktail_icon,
             compound="top",
+            activebackground=obsidian_black,
         )
         self.search_button.grid(row=2, column=1, padx=10, pady=10)
 
