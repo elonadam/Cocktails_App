@@ -2,6 +2,7 @@ import json
 from cocktail import Cocktail  # Assuming the Cocktail class is defined in cocktail.py
 import re
 
+
 class CocktailManager:
     """
     Manages a collection of cocktails and handles operations like adding, editing, and deleting recipes.
@@ -117,6 +118,28 @@ class CocktailManager:
                           'lime juice': 0,
                           'egg white': 0,
                           'lemon juice': 0,
+                          'cranberry juice': 0,
+                          'bourbon': 40,
+                          'coconut cream': 0,
+                          'pineapple juice': 0,
+                          'tomato juice': 0,
+                          'cachaֳ§a': 40,
+                          'chilled champagne': 15,
+                          'champagne': 15,
+                          'pisco': 25,
+                          'fresh pineapple juice': 0,
+                          'cherry liqueur': 20,
+                          'bourbon whiskey': 40,
+                          'elderflower cordial': 17,
+                          'sugar cane juice': 0,
+                          'passion fruit purֳ©e': 0,
+                          'honey syrup': 0,
+                          'prosecco (served on the side)': 12,
+                          'vanilla syrup': 0,
+                          'egg white (optional for froth)': 0,
+                          'freshly brewed espresso': 0,
+                          'white peach puree': 0,
+                          'fresh grapefruit juice': 0,
                           'orgeat syrup': 0,
                           'triple sec': 30,
                           'gin': 40,
@@ -146,7 +169,15 @@ class CocktailManager:
                           'passoa': 17,
                           'gin or vodka': 40,
                           "bourbon or rye whiskey": 40,
-                          'prosecco': 17, 'jamaican rum': 17, 'mezcal': 17, 'yellow chartreuse': 17, 'green chartreuse': 17, 'coffee liqueur': 17, 'old tom gin': 17, 'golden rum': 17, 'cynar': 16.5}
+                          'prosecco': 17,
+                          'jamaican rum': 17,
+                          'mezcal': 17,
+                          'yellow chartreuse': 17,
+                          'green chartreuse': 17,
+                          'coffee liqueur': 17,
+                          'old tom gin': 17,
+                          'golden rum': 17,
+                          'cynar': 16.5}
 
         # Iterate through each cocktail and calculate ABV
         for name, details in self.cocktail_book.items():
@@ -156,16 +187,16 @@ class CocktailManager:
             alcohol_volume = 0  # Total alcohol content in the cocktail
 
             for ingredient in ingredients:
-                # Handle non-standard measurements like "dash"
+                # Handle "dash" as a special case
                 if "dash" in ingredient:
                     volume = 1  # Assume 1 ml for a dash
                     ingredient_name = ingredient.split("dash")[-1].strip().lower()
                 else:
-                    # Extract volume and ingredient name using regex
-                    match = re.match(r"(\d+)\s*ml\s*(.+)", ingredient)
+                    # Update regex to handle decimals (e.g., "22.5 ml")
+                    match = re.match(r"(\d+(\.\d+)?)\s*ml\s*(.+)", ingredient)
                     if match:
-                        volume = int(match.group(1))
-                        ingredient_name = match.group(2).strip().lower()
+                        volume = float(match.group(1))  # Parse volume as a float
+                        ingredient_name = match.group(3).strip().lower()
                     else:
                         continue
 
@@ -186,7 +217,7 @@ class CocktailManager:
                 cocktail_abv = 0  # Handle case where total volume is 0
 
             # Update the cocktail's ABV
-            details["abv"] = round(cocktail_abv, 2)
+            details["abv"] = round(cocktail_abv, 0)
 
         # Save the updated cocktail data back to the JSON file
         self.save_to_file()
