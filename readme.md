@@ -1,13 +1,11 @@
 
-# TODO 1 abv auto calculate
+
 # TODO 2 add daily cocktail
-# TODO 3 maybe separate gui from real functions
-# TODO 4 font color cant be white
+
 # TODO 5 edit and "and" buttons shouldn't be in the home, maybe under something
 # TODO 6 to make my closet with my alcohol and then new attribute to each cocktail, which alcohol is needed "vodka,gin"
 # TODO 7 function that Look what you have and suggest by that cocktails
-# https://chatgpt.com/share/67393297-258c-8008-affd-6ba5924a9672
-#TODO 9 fix that abv
+
 what about a look at what cocktails I can make in general?
 
 https://github.com/rasmusab/iba-cocktails/blob/main/wikipedia/iba-cocktails-wiki.json
