@@ -18,7 +18,7 @@
     },
     "Negroni": {
         "name": "Negroni",
-        "abv": 26.67,
+        "abv": 27.0,
         "is_easy_to_make": true,
         "ingredients": [
             "30ml Gin",
@@ -95,7 +95,7 @@
     },
     "Margarita": {
         "name": "Margarita",
-        "abv": 28.89,
+        "abv": 29.0,
         "is_easy_to_make": true,
         "ingredients": [
             "50ml Tequila",
@@ -110,7 +110,7 @@
     },
     "Cosmopolitan": {
         "name": "Cosmopolitan",
-        "abv": 21.58,
+        "abv": 22.0,
         "is_easy_to_make": true,
         "ingredients": [
             "40ml Vodka",
@@ -126,7 +126,7 @@
     },
     "Daiquiri": {
         "name": "Daiquiri",
-        "abv": 23.53,
+        "abv": 24.0,
         "is_easy_to_make": true,
         "ingredients": [
             "50ml White Rum",
@@ -141,7 +141,7 @@
     },
     "Whiskey Sour": {
         "name": "Whiskey Sour",
-        "abv": 0.0,
+        "abv": 22.0,
         "is_easy_to_make": true,
         "ingredients": [
             "50ml Bourbon",
@@ -157,7 +157,7 @@
     },
     "Pina Colada": {
         "name": "Pina Colada",
-        "abv": 12.9,
+        "abv": 13.0,
         "is_easy_to_make": true,
         "ingredients": [
             "50ml White Rum",
@@ -172,7 +172,7 @@
     },
     "Bellini": {
         "name": "Bellini",
-        "abv": 11.33,
+        "abv": 11.0,
         "is_easy_to_make": true,
         "ingredients": [
             "100 ml Prosecco",
@@ -187,7 +187,7 @@
     },
     "Black Russian": {
         "name": "Black Russian",
-        "abv": 33.43,
+        "abv": 33.0,
         "is_easy_to_make": true,
         "ingredients": [
             "50 ml Vodka",
@@ -222,7 +222,7 @@
     },
     "Caipirinha": {
         "name": "Caipirinha",
-        "abv": 0.0,
+        "abv": 40.0,
         "is_easy_to_make": false,
         "ingredients": [
             "60 ml Cacha\u05b3\u00a7a",
@@ -238,7 +238,7 @@
     },
     "Champagne Cocktail": {
         "name": "Champagne Cocktail",
-        "abv": 4.0,
+        "abv": 18.0,
         "is_easy_to_make": true,
         "ingredients": [
             "90 ml Chilled Champagne",
@@ -273,7 +273,7 @@
     },
     "French 75": {
         "name": "French 75",
-        "abv": 11.43,
+        "abv": 20.0,
         "is_easy_to_make": false,
         "ingredients": [
             "30 ml Gin",
@@ -308,7 +308,7 @@
     },
     "Pisco Sour": {
         "name": "Pisco Sour",
-        "abv": 0.0,
+        "abv": 14.0,
         "is_easy_to_make": false,
         "ingredients": [
             "60 ml Pisco",
@@ -325,7 +325,7 @@
     },
     "Sazerac": {
         "name": "Sazerac",
-        "abv": 41.67,
+        "abv": 42.0,
         "is_easy_to_make": false,
         "ingredients": [
             "50 ml Cognac",
@@ -342,7 +342,7 @@
     },
     "Sidecar": {
         "name": "Sidecar",
-        "abv": 28.89,
+        "abv": 29.0,
         "is_easy_to_make": true,
         "ingredients": [
             "50 ml Cognac",
@@ -358,7 +358,7 @@
     },
     "Tom Collins": {
         "name": "Tom Collins",
-        "abv": 6.8,
+        "abv": 7.0,
         "is_easy_to_make": true,
         "ingredients": [
             "60 ml Old Tom Gin",
@@ -391,7 +391,7 @@
     },
     "Zombie": {
         "name": "Zombie",
-        "abv": 26.84,
+        "abv": 27.0,
         "is_easy_to_make": false,
         "ingredients": [
             "45 ml White Rum",
@@ -412,7 +412,7 @@
     },
     "Boulevardier": {
         "name": "Boulevardier",
-        "abv": 28.57,
+        "abv": 29.0,
         "is_easy_to_make": true,
         "ingredients": [
             "45 ml Bourbon or Rye Whiskey",
@@ -444,7 +444,7 @@
     },
     "Hemingway Special": {
         "name": "Hemingway Special",
-        "abv": 23.08,
+        "abv": 23.0,
         "is_easy_to_make": true,
         "ingredients": [
             "60 ml White Rum",
@@ -461,7 +461,7 @@
     },
     "Singapore Sling": {
         "name": "Singapore Sling",
-        "abv": 8.42,
+        "abv": 11.0,
         "is_easy_to_make": false,
         "ingredients": [
             "30 ml Gin",
@@ -482,7 +482,7 @@
     },
     "Last Word": {
         "name": "Last Word",
-        "abv": 0,
+        "abv": 24.0,
         "is_easy_to_make": true,
         "ingredients": [
             "22.5 ml Gin",
@@ -493,13 +493,13 @@
         "need_to_make": "Gin, Green Chartreuse, Maraschino Liqueur, Fresh Lime Juice",
         "instructions": "Shake all ingredients with ice and strain into a chilled cocktail glass.",
         "personal_notes": "none",
-        "is_favorite": false,
-        "times_made": 0,
+        "is_favorite": true,
+        "times_made": 1,
         "method": "Shaken"
     },
     "Paper Plane": {
         "name": "Paper Plane",
-        "abv": 20.0,
+        "abv": 30.0,
         "is_easy_to_make": true,
         "ingredients": [
             "30 ml Bourbon Whiskey",
@@ -516,7 +516,7 @@
     },
     "Spicy Fifty": {
         "name": "Spicy Fifty",
-        "abv": 22.22,
+        "abv": 25.0,
         "is_easy_to_make": false,
         "ingredients": [
             "50 ml Vanilla Vodka",
@@ -534,7 +534,7 @@
     },
     "Planter's Punch": {
         "name": "Planter's Punch",
-        "abv": 7.29,
+        "abv": 7.0,
         "is_easy_to_make": false,
         "ingredients": [
             "45 ml Jamaican Rum",
@@ -545,7 +545,7 @@
         "instructions": "Pour all ingredients directly into a small tumbler or a typical terracotta glass. Add dilution up to taste, it can be given by water, ice or fresh juices.",
         "personal_notes": "none",
         "is_favorite": false,
-        "times_made": 0,
+        "times_made": 1,
         "method": "Built"
     },
     "Long Island Iced Tea": {
@@ -571,7 +571,7 @@
     },
     "Porn Star Martini": {
         "name": "Porn Star Martini",
-        "abv": 13.67,
+        "abv": 17.0,
         "is_easy_to_make": false,
         "ingredients": [
             "50 ml Vanilla Vodka",
@@ -608,7 +608,7 @@
     },
     "Naked and Famous": {
         "name": "Naked and Famous",
-        "abv": 0,
+        "abv": 18.0,
         "is_easy_to_make": true,
         "ingredients": [
             "22.5 ml Mezcal",
@@ -625,7 +625,7 @@
     },
     "Amaretto Sour": {
         "name": "Amaretto Sour",
-        "abv": 15.27,
+        "abv": 15.0,
         "is_easy_to_make": true,
         "ingredients": [
             "60 ml Amaretto",
@@ -643,7 +643,7 @@
     },
     "Espresso Martini": {
         "name": "Espresso Martini",
-        "abv": 21.48,
+        "abv": 21.0,
         "is_easy_to_make": true,
         "ingredients": [
             "50 ml Vodka",
